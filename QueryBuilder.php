@@ -328,11 +328,11 @@ class QueryBuilder {
   }
 
   /**
-   * WHERE 内部使用
+   * WHERE 内部使用のみ
    *
    * @param string $column カラム名
    * @param string $separator セパレーター（=, >, LIKE など）
-   * @param mixed $value 値、または値の配列
+   * @param string|array $value 値、または値の配列
    */
   protected function _where($column, $separator, $value) {
     if (is_array($value)) {
